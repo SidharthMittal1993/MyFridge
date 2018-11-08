@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    #banner.page-header
+      br
+      h1= title
+      each food in dataFood
+        h4= food.name 
+        ul
+          li Date: #{food.date}
+          li Expiry: #{food.expiry}
+          li Left over?: #{food.left_overs}
+          li Quantity: #{food.quantity}
